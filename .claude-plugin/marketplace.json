@@ -1,0 +1,6 @@
+{
+  "name": "sabia-toolkits",
+  "description": "Índice público dos toolkits do Sabiá: skills de stack que estendem os agentes do fluxo.",
+  "owner": { "name": "Daniel Xavier Araújo", "email": "danielxaraujo@gmail.com" },
+  "plugins": []
+}
