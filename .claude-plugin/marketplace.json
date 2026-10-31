@@ -20,30 +20,30 @@
     },
     {
       "name": "spring-batch",
-      "version": "1.0.1",
-      "description": "Spring Batch 5: job, step, reader, processor, writer, tasklet, testes e o agente batch-job",
+      "version": "1.1.0",
+      "description": "Spring Batch 5: job, step, reader, processor, writer, tasklet, testes e o agente spring-batch-job",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "spring-batch",
-        "ref": "spring-batch-1.0.1",
-        "sha": "4b9f7b66a21ea93a2e69939a9ec59b6bee719db2"
+        "ref": "spring-batch-1.1.0",
+        "sha": "287df9dabf78ed7642add9e2c9775efb0ad8dfa1"
       }
     },
     {
       "name": "spring-batch-pab",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "description": "Customização do toolkit Spring Batch feita pelo projeto PAB",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "spring-batch-pab",
-        "ref": "spring-batch-pab-1.1.0",
-        "sha": "4b9f7b66a21ea93a2e69939a9ec59b6bee719db2"
+        "ref": "spring-batch-pab-1.2.0",
+        "sha": "287df9dabf78ed7642add9e2c9775efb0ad8dfa1"
       },
       "customiza": {
         "toolkit": "spring-batch",
-        "versao": "1.0.1"
+        "versao": "1.1.0"
       }
     }
   ]
