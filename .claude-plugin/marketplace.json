@@ -8,38 +8,38 @@
   "plugins": [
     {
       "name": "java",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Java 17 com Spring, Lombok, JPA, MapStruct e testes (JUnit 5, Mockito, AssertJ, JaCoCo)",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "java",
-        "ref": "java-1.0.0",
-        "sha": "f2d8127a93efb0746420eee9fff88b967de26e98"
+        "ref": "java-1.0.1",
+        "sha": "4b9f7b66a21ea93a2e69939a9ec59b6bee719db2"
       }
     },
     {
       "name": "spring-batch",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Spring Batch 5: job, step, reader, processor, writer, tasklet, testes e o agente batch-job",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "spring-batch",
-        "ref": "spring-batch-1.0.0",
-        "sha": "f2d8127a93efb0746420eee9fff88b967de26e98"
+        "ref": "spring-batch-1.0.1",
+        "sha": "4b9f7b66a21ea93a2e69939a9ec59b6bee719db2"
       }
     },
     {
       "name": "spring-batch-pab",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Convenções de batch da casa (pab-batch-commons), seeds de validação e o agente batch-job-pab; repositório privado",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "spring-batch-pab",
-        "ref": "spring-batch-pab-1.0.0",
-        "sha": "f2d8127a93efb0746420eee9fff88b967de26e98"
+        "ref": "spring-batch-pab-1.1.0",
+        "sha": "4b9f7b66a21ea93a2e69939a9ec59b6bee719db2"
       }
     }
   ]
