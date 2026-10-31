@@ -40,6 +40,9 @@ Abra um PR que acrescenta uma entrada em `plugins` do [`.claude-plugin/marketpla
 ```
 
 - `name` igual ao `nome` do `toolkit.json`, em kebab-case, nunca começando com `sa-`.
+- `customiza` (opcional), igual ao do `toolkit.json`: o toolkit é uma cópia modificada de outro
+  (`{ "toolkit": "<base>", "versao": "<versão da base>" }`). O `sabia toolkits listar` o mostra com `↳` abaixo da
+  base, mesmo sem nada baixado. O `claude plugin validate` avisa que não conhece o campo, e isso é esperado.
 - `source`: `github` (`repo`), `url` (qualquer git: GitHub, GitLab, self-hosted) ou `git-subdir` (`url` e `path`),
   sempre com `ref` e `sha`. O CLI clona a `ref` e recusa o toolkit se o commit não for o `sha`.
 - O toolkit precisa passar na validação do CLI: campos obrigatórios, caminhos dentro da pasta e arquivos que

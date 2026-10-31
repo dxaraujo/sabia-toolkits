@@ -33,13 +33,17 @@
     {
       "name": "spring-batch-pab",
       "version": "1.1.0",
-      "description": "Convenções de batch da casa (pab-batch-commons), seeds de validação e o agente batch-job-pab; repositório privado",
+      "description": "Customização do toolkit Spring Batch feita pelo projeto PAB",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "spring-batch-pab",
         "ref": "spring-batch-pab-1.1.0",
         "sha": "4b9f7b66a21ea93a2e69939a9ec59b6bee719db2"
+      },
+      "customiza": {
+        "toolkit": "spring-batch",
+        "versao": "1.0.1"
       }
     }
   ]
