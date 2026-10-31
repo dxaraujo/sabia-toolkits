@@ -8,42 +8,54 @@
   "plugins": [
     {
       "name": "java",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "Java 17 com Spring, Lombok, JPA, MapStruct e testes (JUnit 5, Mockito, AssertJ, JaCoCo)",
+      "autor": {
+        "nome": "Daniel Xavier Araújo",
+        "area": "DIPB"
+      },
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "java",
-        "ref": "java-1.0.1",
-        "sha": "4b9f7b66a21ea93a2e69939a9ec59b6bee719db2"
+        "ref": "java-1.0.2",
+        "sha": "1b0092717548d8b963218d1cf5c0678a9e2e8d0f"
       }
     },
     {
       "name": "spring-batch",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "Spring Batch 5: job, step, reader, processor, writer, tasklet, testes e o agente spring-batch-job",
+      "autor": {
+        "nome": "Daniel Xavier Araújo",
+        "area": "DIPB"
+      },
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "spring-batch",
-        "ref": "spring-batch-1.1.0",
-        "sha": "287df9dabf78ed7642add9e2c9775efb0ad8dfa1"
+        "ref": "spring-batch-1.1.1",
+        "sha": "1b0092717548d8b963218d1cf5c0678a9e2e8d0f"
       }
     },
     {
       "name": "spring-batch-pab",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "description": "Customização do toolkit Spring Batch feita pelo projeto PAB",
+      "autor": {
+        "nome": "Daniel Xavier Araújo",
+        "area": "DIPB"
+      },
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "spring-batch-pab",
-        "ref": "spring-batch-pab-1.2.0",
-        "sha": "287df9dabf78ed7642add9e2c9775efb0ad8dfa1"
+        "ref": "spring-batch-pab-1.2.1",
+        "sha": "1b0092717548d8b963218d1cf5c0678a9e2e8d0f"
       },
       "customiza": {
         "toolkit": "spring-batch",
-        "versao": "1.1.0"
+        "versao": "1.1.1"
       }
     }
   ]

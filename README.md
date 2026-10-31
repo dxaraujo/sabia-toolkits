@@ -40,6 +40,8 @@ Abra um PR que acrescenta uma entrada em `plugins` do [`.claude-plugin/marketpla
 ```
 
 - `name` igual ao `nome` do `toolkit.json`, em kebab-case, nunca começando com `sa-`.
+- `autor`, igual ao do `toolkit.json` (`{ "nome": "…", "area": "…" }`): quem fez e responde pelo toolkit. Aparece
+  na coluna Autor do `sabia toolkits listar`, mesmo sem nada baixado.
 - `customiza` (opcional), igual ao do `toolkit.json`: o toolkit é uma cópia modificada de outro
   (`{ "toolkit": "<base>", "versao": "<versão da base>" }`). O `sabia toolkits listar` o mostra com `↳` abaixo da
   base, mesmo sem nada baixado. O `claude plugin validate` avisa que não conhece o campo, e isso é esperado.
