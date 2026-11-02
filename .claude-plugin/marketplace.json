@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "java",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "description": "Java 17 com Spring, Lombok, JPA, MapStruct e testes (JUnit 5, Mockito, AssertJ, JaCoCo)",
       "autor": {
         "nome": "Daniel Xavier Araújo",
@@ -18,13 +18,13 @@
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "java",
-        "ref": "java-1.0.2",
-        "sha": "1b0092717548d8b963218d1cf5c0678a9e2e8d0f"
+        "ref": "java-1.1.0",
+        "sha": "f3085742d56c31da5905c47b345c22c8d9b339f1"
       }
     },
     {
       "name": "spring-batch",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "description": "Spring Batch 5: job, step, reader, processor, writer, tasklet, testes e o agente spring-batch-job",
       "autor": {
         "nome": "Daniel Xavier Araújo",
@@ -34,13 +34,13 @@
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "spring-batch",
-        "ref": "spring-batch-1.1.1",
-        "sha": "1b0092717548d8b963218d1cf5c0678a9e2e8d0f"
+        "ref": "spring-batch-1.2.0",
+        "sha": "f3085742d56c31da5905c47b345c22c8d9b339f1"
       }
     },
     {
       "name": "spring-batch-pab",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "description": "Customização do toolkit Spring Batch feita pelo projeto PAB",
       "autor": {
         "nome": "Daniel Xavier Araújo",
@@ -50,12 +50,12 @@
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "spring-batch-pab",
-        "ref": "spring-batch-pab-1.2.1",
-        "sha": "1b0092717548d8b963218d1cf5c0678a9e2e8d0f"
+        "ref": "spring-batch-pab-1.3.0",
+        "sha": "f3085742d56c31da5905c47b345c22c8d9b339f1"
       },
       "customiza": {
         "toolkit": "spring-batch",
-        "versao": "1.1.1"
+        "versao": "1.2.0"
       }
     }
   ]

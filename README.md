@@ -10,12 +10,13 @@ O Sabiá é o fluxo e não sabe programar em nenhuma stack. Um toolkit traz esse
 ([schema](https://raw.githubusercontent.com/dxaraujo/sabia/main/skills/sa-setup/assets/toolkit.schema.json)). Cada
 skill responde a três perguntas:
 
-- **Quem** a usa: `papeis` (codificador, revisor, especificador…).
+- **Quem** a usa: `papeis` (desenvolvedor, revisor, especificador…).
 - **Onde** ela se aplica: `stack` e `deteccao`; a setup só a pré-marca se o repositório casar.
 - **Em que passo**: `passo`, opcional. Sem ele, é uma skill de apoio, que o agente carrega quando o artefato pede.
-  Com ele, a skill assume um passo de um agente do Sabiá — escrever o PRD (`especificador`) ou codificar uma tarefa
-  (`codificador`) — e pode delegar a um agente do toolkit (`agentes[]`). O Sabiá continua dono da revisão, do GATE,
-  da verificação e do commit ([passos.md](https://github.com/dxaraujo/sabia/blob/main/skills/sabia/references/passos.md)).
+  Com ele, a skill assume um passo de um fluxo do Sabiá, dito pelo id em `passo.passo` — escrever o PRD
+  (`sa-prd.prd.escrever`) ou codificar uma tarefa (`sa-codificar.codificar.tarefa`) — e pode delegar a um agente do
+  toolkit (`agentes[]`). O Sabiá continua dono da revisão, do GATE, da verificação e do commit
+  ([passos.md](https://github.com/dxaraujo/sabia/blob/main/skills/sabia/references/passos.md)).
 
 ## Usar
 
