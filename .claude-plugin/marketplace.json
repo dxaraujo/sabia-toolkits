@@ -57,6 +57,22 @@
         "toolkit": "spring-batch",
         "versao": "1.2.0"
       }
+    },
+    {
+      "name": "iara",
+      "version": "0.3.2",
+      "description": "Padrão de especificação do IARA: HF, REG, EL, CT, ET e ATA pelos fluxos e padrões do IARA, sobre o fluxo de especificação do Sabiá",
+      "autor": {
+        "nome": "Daniel Xavier Araújo",
+        "area": "DIPB"
+      },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/dxaraujo/toolkits.git",
+        "path": "iara",
+        "ref": "iara-0.3.2",
+        "sha": "34882a4b716e04f722f9f135a4dcf567d659592d"
+      }
     }
   ]
 }
