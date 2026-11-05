@@ -60,7 +60,7 @@
     },
     {
       "name": "iara",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "description": "Padrão de especificação do IARA: HF, REG, EL, CT, ET e ATA pelos fluxos e padrões do IARA, sobre o fluxo de especificação do Sabiá",
       "autor": {
         "nome": "Marcia Bravo",
