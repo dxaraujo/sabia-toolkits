@@ -19,7 +19,7 @@
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "java",
         "ref": "java-1.1.0",
-        "sha": "f3085742d56c31da5905c47b345c22c8d9b339f1"
+        "sha": "32e0aa0a44866efa93377edff6526a3402167f6d"
       }
     },
     {
@@ -35,7 +35,7 @@
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "spring-batch",
         "ref": "spring-batch-1.2.0",
-        "sha": "f3085742d56c31da5905c47b345c22c8d9b339f1"
+        "sha": "32e0aa0a44866efa93377edff6526a3402167f6d"
       }
     },
     {
@@ -51,7 +51,7 @@
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "spring-batch-pab",
         "ref": "spring-batch-pab-1.3.0",
-        "sha": "f3085742d56c31da5905c47b345c22c8d9b339f1"
+        "sha": "32e0aa0a44866efa93377edff6526a3402167f6d"
       },
       "customiza": {
         "toolkit": "spring-batch",
@@ -70,8 +70,8 @@
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "iara",
-        "ref": "iara-0.3.2",
-        "sha": "34882a4b716e04f722f9f135a4dcf567d659592d"
+        "ref": "iara-0.3.3",
+        "sha": "32e0aa0a44866efa93377edff6526a3402167f6d"
       }
     }
   ]
