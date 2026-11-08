@@ -60,8 +60,8 @@
     },
     {
       "name": "iara",
-      "version": "0.4.0",
-      "description": "Padrão de especificação do IARA sobre o Sabiá 2.1.5: HF, REG, EL, MSG e ATA no formato da casa, a ET as-built no design.md e as linhas do CT.csv, pelos padrões do IARA e um fluxo mínimo de perguntas",
+      "version": "0.4.1",
+      "description": "Padrão de especificação do IARA sobre o Sabiá 2.1.6: HF, REG, EL, MSG e ATA no formato da casa, a ET as-built no design.md e as linhas do CT.csv, pelos padrões do IARA e um fluxo mínimo de perguntas",
       "autor": {
         "nome": "Marcia Bravo",
         "area": "DPPM"
@@ -70,8 +70,8 @@
         "source": "git-subdir",
         "url": "https://github.com/dxaraujo/toolkits.git",
         "path": "iara",
-        "ref": "iara-0.4.0",
-        "sha": "7f5e5101eae97ac18b0a8895a4db4ccb2ec3051a"
+        "ref": "iara-0.4.1",
+        "sha": "0bdc15978911afef594979dd8b94dc76f6006caf"
       }
     }
   ]
