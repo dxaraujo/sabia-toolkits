@@ -22,14 +22,16 @@ skill responde a três perguntas:
 
 ```sh
 npx sabia toolkits listar            # este índice e os extras de ~/.sabia/indices.json
-npx sabia toolkits instalar <nome>   # baixa para ~/.sabia/toolkits/<nome>/ e copia para as ferramentas
+npx sabia toolkits instalar <nome>   # na raiz do projeto: baixa, liga aos agentes e regenera
+npx sabia toolkits instalar <nome>@<versão>   # uma versão anterior, se ainda estiver no índice
 ```
 
-Depois, no projeto, peça ao agente "atualizar os agentes do Sabiá" para ligar o toolkit.
+Cada versão fica em `~/.sabia/toolkits/<nome>/<versão>/`, e cada projeto aponta para a sua. Fora de um projeto, o
+`instalar` só baixa.
 
 ## Propor um toolkit
 
-Abra um PR que acrescenta uma entrada em `toolkits` do [`index.json`](index.json) ([schema](https://dxaraujo.github.io/json-schemas/sabia/index.schema.json)):
+Abra um PR que acrescenta uma entrada em `toolkits` do [`index.json`](index.json), uma por versão ([schema](https://dxaraujo.github.io/json-schemas/sabia/index.schema.json)):
 
 ```json
 {
@@ -41,6 +43,8 @@ Abra um PR que acrescenta uma entrada em `toolkits` do [`index.json`](index.json
 }
 ```
 
+- **Versão nova é entrada nova.** As anteriores ficam, para quem fixa `@versão`; a lista do CLI mostra só a mais nova.
+  Sai do índice só a versão que deixou de passar na validação do CLI.
 - `nome` igual ao `nome` do `toolkit.json`, em kebab-case, nunca começando com `sa-`.
 - `autor`, igual ao do `toolkit.json`: quem fez e responde pelo toolkit. Aparece na coluna Autor do `sabia toolkits listar`.
 - `customiza` (opcional), igual ao do `toolkit.json`: o toolkit é uma cópia modificada de outro
@@ -48,7 +52,7 @@ Abra um PR que acrescenta uma entrada em `toolkits` do [`index.json`](index.json
 - `fonte`: qualquer repositório git (GitHub, GitLab, self-hosted), sempre com `ref` e `sha`; `subpasta` quando o
   repositório tem vários toolkits. O CLI clona a `ref` e recusa o toolkit se o commit não for o `sha`.
 - O toolkit precisa passar na validação do CLI: campos obrigatórios, caminhos dentro da pasta e arquivos que
-  existem. Confira antes com `npx sabia toolkits baixar <url-git>@<ref>`.
+  existem. Confira antes, fora de um projeto, com `npx sabia toolkits instalar <url-git>@<ref>`.
 - Nada de nome de empresa, projeto ou dado de cliente: o índice é público.
 
 **Estar no índice não é auditoria.** A entrada fixa a versão e o commit; quem instala decide se confia no conteúdo.
