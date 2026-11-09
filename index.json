@@ -1,0 +1,71 @@
+{
+  "$schema": "https://dxaraujo.github.io/json-schemas/sabia/index.schema.json",
+  "nome": "sabia-toolkits",
+  "descricao": "Índice público dos toolkits do Sabiá: skills de stack que estendem os agentes do fluxo.",
+  "toolkits": [
+    {
+      "nome": "java",
+      "versao": "1.1.0",
+      "descricao": "Java 17 com Spring, Lombok, JPA, MapStruct e testes (JUnit 5, Mockito, AssertJ, JaCoCo)",
+      "autor": {
+        "nome": "Daniel Araújo",
+        "area": "DEPB"
+      },
+      "fonte": {
+        "url": "https://github.com/dxaraujo/toolkits.git",
+        "ref": "java-1.1.0",
+        "sha": "32e0aa0a44866efa93377edff6526a3402167f6d",
+        "subpasta": "java"
+      }
+    },
+    {
+      "nome": "spring-batch",
+      "versao": "1.2.0",
+      "descricao": "Spring Batch 5: job, step, reader, processor, writer, tasklet, testes e o agente spring-batch-job",
+      "autor": {
+        "nome": "Daniel Araújo",
+        "area": "DEPB"
+      },
+      "fonte": {
+        "url": "https://github.com/dxaraujo/toolkits.git",
+        "ref": "spring-batch-1.2.0",
+        "sha": "32e0aa0a44866efa93377edff6526a3402167f6d",
+        "subpasta": "spring-batch"
+      }
+    },
+    {
+      "nome": "spring-batch-pab",
+      "versao": "1.3.0",
+      "descricao": "Customização do toolkit Spring Batch feita pelo projeto PAB",
+      "autor": {
+        "nome": "Daniel Araújo",
+        "area": "DEPB"
+      },
+      "customiza": {
+        "toolkit": "spring-batch",
+        "versao": "1.2.0"
+      },
+      "fonte": {
+        "url": "https://github.com/dxaraujo/toolkits.git",
+        "ref": "spring-batch-pab-1.3.0",
+        "sha": "32e0aa0a44866efa93377edff6526a3402167f6d",
+        "subpasta": "spring-batch-pab"
+      }
+    },
+    {
+      "nome": "iara",
+      "versao": "0.5.1",
+      "descricao": "Padrão de especificação do IARA adaptado para o Sabiá: HF, REG, EL, MSG e ATA no formato da casa, a ET as-built no design.md e as linhas do CT.csv, pelos padrões do IARA e um fluxo mínimo de perguntas",
+      "autor": {
+        "nome": "Marcia Bravo",
+        "area": "DPPM"
+      },
+      "fonte": {
+        "url": "https://github.com/dxaraujo/toolkits.git",
+        "ref": "iara-0.5.1",
+        "sha": "48165836b12036a38d26e6b0f7c7808265c151a4",
+        "subpasta": "iara"
+      }
+    }
+  ]
+}

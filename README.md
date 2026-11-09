@@ -29,25 +29,24 @@ Depois, no projeto, peça ao agente "atualizar os agentes do Sabiá" para ligar 
 
 ## Propor um toolkit
 
-Abra um PR que acrescenta uma entrada em `plugins` do [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json):
+Abra um PR que acrescenta uma entrada em `toolkits` do [`index.json`](index.json) ([schema](https://dxaraujo.github.io/json-schemas/sabia/index.schema.json)):
 
 ```json
 {
-  "name": "spring-batch",
-  "version": "1.0.0",
-  "description": "Jobs Spring Batch 5: steps chunk e tasklet, readers e writers JDBC, testes de job",
-  "source": { "source": "github", "repo": "<dono>/<repo>", "ref": "v1.0.0", "sha": "<commit de 40 caracteres>" }
+  "nome": "spring-batch",
+  "versao": "1.0.0",
+  "descricao": "Jobs Spring Batch 5: steps chunk e tasklet, readers e writers JDBC, testes de job",
+  "autor": { "nome": "Ana Exemplo", "area": "Equipe" },
+  "fonte": { "url": "https://github.com/<dono>/<repo>.git", "ref": "v1.0.0", "sha": "<commit de 40 caracteres>", "subpasta": "<opcional>" }
 }
 ```
 
-- `name` igual ao `nome` do `toolkit.json`, em kebab-case, nunca começando com `sa-`.
-- `autor`, igual ao do `toolkit.json` (`{ "nome": "…", "area": "…" }`): quem fez e responde pelo toolkit. Aparece
-  na coluna Autor do `sabia toolkits listar`, mesmo sem nada baixado.
+- `nome` igual ao `nome` do `toolkit.json`, em kebab-case, nunca começando com `sa-`.
+- `autor`, igual ao do `toolkit.json`: quem fez e responde pelo toolkit. Aparece na coluna Autor do `sabia toolkits listar`.
 - `customiza` (opcional), igual ao do `toolkit.json`: o toolkit é uma cópia modificada de outro
-  (`{ "toolkit": "<base>", "versao": "<versão da base>" }`). O `sabia toolkits listar` o mostra com `↳` abaixo da
-  base, mesmo sem nada baixado. O `claude plugin validate` avisa que não conhece o campo, e isso é esperado.
-- `source`: `github` (`repo`), `url` (qualquer git: GitHub, GitLab, self-hosted) ou `git-subdir` (`url` e `path`),
-  sempre com `ref` e `sha`. O CLI clona a `ref` e recusa o toolkit se o commit não for o `sha`.
+  (`{ "toolkit": "<base>", "versao": "<versão da base>" }`).
+- `fonte`: qualquer repositório git (GitHub, GitLab, self-hosted), sempre com `ref` e `sha`; `subpasta` quando o
+  repositório tem vários toolkits. O CLI clona a `ref` e recusa o toolkit se o commit não for o `sha`.
 - O toolkit precisa passar na validação do CLI: campos obrigatórios, caminhos dentro da pasta e arquivos que
   existem. Confira antes com `npx sabia toolkits baixar <url-git>@<ref>`.
 - Nada de nome de empresa, projeto ou dado de cliente: o índice é público.
@@ -58,8 +57,8 @@ executa nada do toolkit.
 
 ## Índice privado (GitLab da empresa)
 
-O formato é o mesmo: um repositório com `.claude-plugin/marketplace.json`, num GitLab interno, com as entradas
-apontando para os toolkits privados (`source` `url`, com `ref` e `sha`). O CLI clona com o git da pessoa (credencial,
+O formato é o mesmo: um repositório com `index.json`, num GitLab interno, com as entradas apontando para os toolkits
+privados (`fonte` com `url`, `ref` e `sha`). O CLI clona com o git da pessoa (credencial,
 SSH, CA), então privados e subgrupos funcionam sem configuração extra.
 
 Para usar:
