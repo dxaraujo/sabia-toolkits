@@ -7,7 +7,7 @@ cada um vive no repositório dele, e aqui fica a entrada com a fonte, a versão 
 
 O Sabiá é o fluxo e não sabe programar em nenhuma stack. Um toolkit traz esse conhecimento: um pacote de skills
 (Java, Spring Batch, Angular…) descrito por um `toolkit.json` na raiz
-([schema](https://dxaraujo.github.io/json-schemas/sabia/toolkit.schema.json)). Cada
+([schema](https://raw.githubusercontent.com/dxaraujo/sabia/main/schemas/toolkit.schema.json)). Cada
 skill responde a três perguntas:
 
 - **Quem** a usa: `papeis` (desenvolvedor, revisor, especificador…).
@@ -31,7 +31,7 @@ Cada versão fica em `~/.sabia/toolkits/<nome>/<versão>/`, e cada projeto apont
 
 ## Propor um toolkit
 
-Abra um PR que acrescenta uma entrada em `toolkits` do [`index.json`](index.json), uma por versão ([schema](https://dxaraujo.github.io/json-schemas/sabia/index.schema.json)):
+Abra um PR que acrescenta uma entrada em `toolkits` do [`index.json`](index.json), uma por versão ([schema](https://raw.githubusercontent.com/dxaraujo/sabia/main/schemas/index.schema.json)):
 
 ```json
 {
