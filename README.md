@@ -39,7 +39,7 @@ Abra um PR que acrescenta uma entrada em `toolkits` do [`index.json`](index.json
   "versao": "1.0.0",
   "descricao": "Jobs Spring Batch 5: steps chunk e tasklet, readers e writers JDBC, testes de job",
   "autor": { "nome": "Ana Exemplo", "area": "Equipe" },
-  "fonte": { "url": "https://github.com/<dono>/<repo>.git", "ref": "v1.0.0", "sha": "<commit de 40 caracteres>", "subpasta": "<opcional>" }
+  "fonte": { "url": "https://<servidor-git>/<dono>/<repo>.git", "ref": "v1.0.0", "sha": "<commit de 40 caracteres>", "subpasta": "<opcional>" }
 }
 ```
 
@@ -68,13 +68,13 @@ SSH, CA), então privados e subgrupos funcionam sem configuração extra.
 Para usar:
 
 ```sh
-npx sabia toolkits listar --indice https://gitlab.<empresa>/<grupo>/sabia-toolkits.git
+npx sabia toolkits listar --indice https://scm.prevnet/daniel.xavier/sabia-toolkits.git
 ```
 
 ou, para valer sempre, uma lista de URLs em `~/.sabia/indices.json`:
 
 ```json
-["https://gitlab.<empresa>/<grupo>/sabia-toolkits.git"]
+["https://scm.prevnet/daniel.xavier/sabia-toolkits.git"]
 ```
 
 ## Licença
